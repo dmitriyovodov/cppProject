@@ -1,0 +1,50 @@
+\doxysection{renderer.\+cpp}
+\hypertarget{renderer_8cpp_source}{}\label{renderer_8cpp_source}\index{D:/CPPProject/game/game/renderer.cpp@{D:/CPPProject/game/game/renderer.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{keywordtype}{void}\ render\_background()\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ u32*\ pixel\ =\ (u32*)memory;}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ y\ =\ 0;\ y\ <\ height;\ y++)\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ 0;\ x\ <\ width;\ x++)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ *pixel++\ =\ 0xff0000;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00012\ \ \ \ \ \}}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ clear\_screen(u32\ color)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ u32*\ pixel\ =\ (u32*)memory;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ y\ =\ 0;\ y\ <\ height;\ y++)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ 0;\ x\ <\ width;\ x++)\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ *pixel++\ =\ color;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ clamp(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ val,\ \textcolor{keywordtype}{int}\ max)\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{if}\ (val\ <\ min)\ \textcolor{keywordflow}{return}\ min;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (val\ >\ max)\ \textcolor{keywordflow}{return}\ max;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00040\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ draw\_rect(\textcolor{keywordtype}{int}\ x0,\ \textcolor{keywordtype}{int}\ y0,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ color)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ x0\ =\ clamp(0,\ x0,\ width);}
+\DoxyCodeLine{00053\ \ \ \ \ x1\ =\ clamp(0,\ x1,\ width);}
+\DoxyCodeLine{00054\ \ \ \ \ y0\ =\ clamp(0,\ y0,\ height);}
+\DoxyCodeLine{00055\ \ \ \ \ y1\ =\ clamp(0,\ y1,\ height);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ y\ =\ y0;\ y\ <\ y1;\ y++)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ u32*\ pixel\ =\ (u32*)memory\ +\ x0\ +\ y\ *\ width;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ x0;\ x\ <\ x1;\ x++)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ *pixel++\ =\ color;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{void}\ draw\_border()\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ draw\_rect(0,0,10,720,\ 0xffffff);}
+\DoxyCodeLine{00071\ \ \ \ \ draw\_rect(1255,\ 0,\ 1265,\ 720,\ 0xffffff);}
+\DoxyCodeLine{00072\ \ \ \ \ draw\_rect(0,\ 710,\ 1280,\ 720,\ 0xffffff);}
+\DoxyCodeLine{00073\ \}}
+
+\end{DoxyCode}

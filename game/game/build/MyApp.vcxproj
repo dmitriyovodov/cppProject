@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F06E303B-0650-383E-B7E2-F6C07CB15C44}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MyApp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CPPProject\game\game\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyApp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CPPProject\game\game\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyApp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CPPProject\game\game\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyApp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CPPProject\game\game\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyApp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>windows.lib;cmath.lib;vector.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CPPProject/game/game/build/Debug/MyApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CPPProject/game/game/build/Debug/MyApp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>windows.lib;cmath.lib;vector.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CPPProject/game/game/build/Release/MyApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CPPProject/game/game/build/Release/MyApp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>windows.lib;cmath.lib;vector.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CPPProject/game/game/build/MinSizeRel/MyApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CPPProject/game/game/build/MinSizeRel/MyApp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\CPPProject\game\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>windows.lib;cmath.lib;vector.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/CPPProject/game/game/build/RelWithDebInfo/MyApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/CPPProject/game/game/build/RelWithDebInfo/MyApp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CPPProject\game\game\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/CPPProject/game/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Programms\GCC\mingw64\bin\cmake.exe -SD:/CPPProject/game/game -BD:/CPPProject/game/game/build --check-stamp-file D:/CPPProject/game/game/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CPPProject\game\game\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/CPPProject/game/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Programms\GCC\mingw64\bin\cmake.exe -SD:/CPPProject/game/game -BD:/CPPProject/game/game/build --check-stamp-file D:/CPPProject/game/game/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CPPProject\game\game\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/CPPProject/game/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Programms\GCC\mingw64\bin\cmake.exe -SD:/CPPProject/game/game -BD:/CPPProject/game/game/build --check-stamp-file D:/CPPProject/game/game/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CPPProject\game\game\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/CPPProject/game/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Programms\GCC\mingw64\bin\cmake.exe -SD:/CPPProject/game/game -BD:/CPPProject/game/game/build --check-stamp-file D:/CPPProject/game/game/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeCXXCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeRCCompiler.cmake;D:\CPPProject\game\game\build\CMakeFiles\3.28.2\CMakeSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXCompilerABI.cpp;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeRCInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystem.cmake.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCXXCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Determine-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\Windows.cmake;D:\Programms\GCC\mingw64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CPPProject\game\game\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\CPPProject\game\game\main.cpp" />
+    <ClCompile Include="D:\CPPProject\game\game\sim.cpp" />
+    <ClCompile Include="D:\CPPProject\game\game\levels.cpp" />
+    <ClCompile Include="D:\CPPProject\game\game\utils.cpp" />
+    <ClCompile Include="D:\CPPProject\game\game\platform_common.cpp" />
+    <ClCompile Include="D:\CPPProject\game\game\renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\CPPProject\game\game\build\ZERO_CHECK.vcxproj">
+      <Project>{8810676B-081D-336D-8359-2B9645EEC7F9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

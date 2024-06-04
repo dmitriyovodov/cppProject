@@ -1,0 +1,23 @@
+﻿  main.cpp
+D:\CPPProject\game\game\sim.cpp(54,59): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(55,44): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(55,13): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(77,64): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(77,42): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(77,23): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\CPPProject\game\game\sim.cpp(77,13): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+  game.vcxproj -> D:\CPPProject\game\x64\Debug\game.exe

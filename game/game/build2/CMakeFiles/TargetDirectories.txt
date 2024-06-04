@@ -1,0 +1,3 @@
+D:/CPPProject/game/game/build2/CMakeFiles/MyApp.dir
+D:/CPPProject/game/game/build2/CMakeFiles/edit_cache.dir
+D:/CPPProject/game/game/build2/CMakeFiles/rebuild_cache.dir
