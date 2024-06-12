@@ -1,3 +1,5 @@
+D:/CPPProject/game/game/build/CMakeFiles/my_test.dir
 D:/CPPProject/game/game/build/CMakeFiles/MyApp.dir
-D:/CPPProject/game/game/build/CMakeFiles/ALL_BUILD.dir
-D:/CPPProject/game/game/build/CMakeFiles/ZERO_CHECK.dir
+D:/CPPProject/game/game/build/CMakeFiles/test.dir
+D:/CPPProject/game/game/build/CMakeFiles/edit_cache.dir
+D:/CPPProject/game/game/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,24 @@
+Start testing: Jun 12 18:15 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/1 Testing: my_test
+1/1 Test: my_test
+Command: "D:/CPPProject/game/game/build/my_test.exe"
+Directory: D:/CPPProject/game/game/build
+"my_test" start time: Jun 12 18:15 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.11"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases: 8 | 8 passed | 0 failed | 0 skipped
+[doctest] assertions: 8 | 8 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"my_test" end time: Jun 12 18:15 RTZ 2 (çèìà)
+"my_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 12 18:15 RTZ 2 (çèìà)

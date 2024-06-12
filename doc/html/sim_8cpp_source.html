@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>docGame: D:/CPPProject/game/game/sim.cpp Source File</title>
+<title>cccc: D:/CPPProject/game/game/main_code/sim.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">docGame<span id="projectnumber">&#160;1</span>
+   <div id="projectname">cccc
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_37c6514aeece95293041e34c0f2e0784.html">game</a></li><li class="navelem"><a class="el" href="dir_f3c7bdd864fb62ac910b9282db6cb7e6.html">game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_37c6514aeece95293041e34c0f2e0784.html">game</a></li><li class="navelem"><a class="el" href="dir_f3c7bdd864fb62ac910b9282db6cb7e6.html">game</a></li><li class="navelem"><a class="el" href="dir_d1505030f84e25c582bc69a66d605026.html">main_code</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -95,112 +95,123 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define pressed(b) (input-&gt;buttons[b].is_down &amp;&amp; input-&gt;buttons[b].changed)</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define released(b) (!input-&gt;buttons[b].is_down &amp;&amp; input-&gt;buttons[b].changed)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keywordtype">float</span> player_pos_x = 565, ball_p_x = 630, ball_p_y = 240, ball_speed_y = -400, ball_speed_x = 0, ball_size = 20;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">int</span> p_width = 150, p_height = 20;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">float</span> speed = 1200.f;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">float</span> dif;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">float</span> player_pos_x = 565, ball_p_x = 630, ball_p_y = 240, ball_speed_y = -400, ball_speed_x = 0, ball_size = 20;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">int</span> p_width = 150, p_height = 20;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">float</span> speed = 1200.f;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">float</span> dif;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">int</span> bl_w = 130, bl_h = 30;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>u32 bl_color = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::vector&lt;std::vector&lt;int&gt;&gt; blocks;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">int</span> bl_w = 130, bl_h = 30;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>u32 bl_color = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>std::vector&lt;std::vector&lt;int&gt;&gt; blocks;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">int</span> hot_button = 0;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">int</span> hot_button = 0;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">void</span> simulate_game(<a class="code hl_struct" href="struct_input.html">Input</a>* input, <span class="keywordtype">float</span> dt) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    clear_screen(0x000000);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    draw_border();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (current_gamemode == GM_GAMEPLAY) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> (is_down(BUTTON_LEFT)) player_pos_x -= speed * dt;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> (is_down(BUTTON_RIGHT)) player_pos_x += speed * dt;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span> (player_pos_x &lt;= 10) player_pos_x = 10;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (player_pos_x &gt;= 1265 - p_width) player_pos_x = 1265 - p_width;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        draw_rect(player_pos_x, 60, player_pos_x + p_width, 60 + p_height, 0xffffff);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        ball_p_y += ball_speed_y * dt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        ball_p_x += ball_speed_x * dt;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span> (60 &lt;= ball_p_y &amp;&amp; ball_p_y &lt;= 60 + p_height &amp;&amp; ball_p_x + ball_size &gt; player_pos_x &amp;&amp; ball_p_x &lt; player_pos_x + p_width) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            dif = (ball_p_x + ball_size - (player_pos_x + p_width / 2)) * 2;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (is_down(BUTTON_RIGHT) || is_down(BUTTON_LEFT)) dif *= 2;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (ball_speed_x + dif &lt; speed) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                ball_speed_x += dif;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            ball_speed_y *= -1;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span> (ball_p_y + ball_size &gt;= 720) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            ball_speed_y *= -1;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span> simulate_game(<a class="code hl_struct" href="struct_input.html">Input</a>* input, <span class="keywordtype">float</span> dt) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    clear_screen(0x000000);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    draw_border();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (current_gamemode == GM_GAMEPLAY) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span> (is_down(BUTTON_LEFT)) player_pos_x -= speed * dt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span> (is_down(BUTTON_RIGHT)) player_pos_x += speed * dt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (player_pos_x &lt;= 10) player_pos_x = 10;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span> (player_pos_x &gt;= 1265 - p_width) player_pos_x = 1265 - p_width;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        draw_rect(player_pos_x, 60, player_pos_x + p_width, 60 + p_height, 0xffffff);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        ball_p_y += ball_speed_y * dt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        ball_p_x += ball_speed_x * dt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span> (60 &lt;= ball_p_y &amp;&amp; ball_p_y &lt;= 60 + p_height &amp;&amp; ball_p_x + ball_size &gt; player_pos_x &amp;&amp; ball_p_x &lt; player_pos_x + p_width) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            dif = (ball_p_x + ball_size - (player_pos_x + p_width / 2)) * 2;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span> (is_down(BUTTON_RIGHT) || is_down(BUTTON_LEFT)) dif *= 2;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span> (ball_speed_x + dif &lt; speed) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                ball_speed_x += dif;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            ball_speed_y *= -1;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> (ball_p_y + ball_size &gt;= 720) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            ball_speed_y *= -1;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">if</span> (ball_p_x + ball_size &gt;= 1265 || ball_p_x &lt;= 10) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            ball_speed_x *= -1;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span> (ball_p_x + ball_size &gt;= 1265 || ball_p_x &lt;= 10) {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            ball_speed_x *= -1;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        draw_rect(ball_p_x, ball_p_y, ball_p_x + ball_size, ball_p_y + ball_size, 0xffffff);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; blocks.size(); i++) {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            draw_rect(blocks[i][0], blocks[i][1], blocks[i][0] + bl_w, blocks[i][1] + bl_h, bl_color);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">if</span> ((ball_p_x &lt;= blocks[i][0] + bl_w &amp;&amp; ball_p_x + ball_size &gt;= blocks[i][0]) &amp;&amp;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                (ball_p_y &lt;= blocks[i][1] + bl_h &amp;&amp; ball_p_y + ball_size &gt;= blocks[i][1])) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">if</span> (ball_p_x &gt;= blocks[i][0] + bl_w * 0.98 || ball_p_x + ball_size &lt;= blocks[i][0] + bl_w * 0.02)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    ball_speed_x *= -1;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    ball_speed_y *= -1;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                blocks.erase(blocks.begin() + i);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">if</span> (blocks.empty() || ball_p_y &lt;= 0) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            current_gamemode = GM_MENU;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            blocks.clear();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            player_pos_x = 565, ball_p_x = 630, ball_p_y = 240, ball_speed_y = -400, ball_speed_x = 0, ball_size = 20;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            p_width = 150, p_height = 20;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (current_gamemode == GM_MENU) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">if</span> (pressed(BUTTON_LEFT)) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            hot_button = hot_button - 1;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">if</span> (hot_button == -1) hot_button = 2;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (pressed(BUTTON_RIGHT)) hot_button = (hot_button + 1) % 3;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">if</span> (hot_button == 0) {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            draw_rect(250, 300, 450, 400, 0xffff00);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            draw_rect(500, 300, 700, 400, 0x550055);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        draw_rect(ball_p_x, ball_p_y, ball_p_x + ball_size, ball_p_y + ball_size, 0xffffff);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; blocks.size(); i++) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            draw_rect(blocks[i][0], blocks[i][1], blocks[i][0] + bl_w, blocks[i][1] + bl_h, bl_color);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> ((ball_p_x &lt;= blocks[i][0] + bl_w &amp;&amp; ball_p_x + ball_size &gt;= blocks[i][0]) &amp;&amp;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                (ball_p_y &lt;= blocks[i][1] + bl_h &amp;&amp; ball_p_y + ball_size &gt;= blocks[i][1])) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">if</span> (ball_p_x &gt;= blocks[i][0] + bl_w * 0.98 || ball_p_x + ball_size &lt;= blocks[i][0] + bl_w * 0.02)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    ball_speed_x *= -1;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    ball_speed_y *= -1;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                blocks.erase(blocks.begin() + i);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span> (blocks.empty() || ball_p_y &lt;= 0) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            current_gamemode = GM_MENU;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            blocks.clear();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            player_pos_x = 565, ball_p_x = 630, ball_p_y = 240, ball_speed_y = -400, ball_speed_x = 0, ball_size = 20;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            p_width = 150, p_height = 20;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (current_gamemode == GM_MENU) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span> (pressed(BUTTON_LEFT)) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            hot_button = hot_button - 1;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">if</span> (hot_button == -1) hot_button = 2;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">if</span> (pressed(BUTTON_RIGHT)) hot_button = (hot_button + 1) % 3;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> (hot_button == 0) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            draw_rect(250, 300, 450, 400, 0xffff00);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            draw_rect(500, 300, 700, 400, 0x550055);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            draw_rect(750, 300, 950, 400, 0x005555);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hot_button == 1) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            draw_rect(250, 300, 450, 400, 0x555500);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            draw_rect(500, 300, 700, 400, 0xff00ff);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            draw_rect(750, 300, 950, 400, 0x005555);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hot_button == 1) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hot_button == 2) {</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            draw_rect(250, 300, 450, 400, 0x555500);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            draw_rect(500, 300, 700, 400, 0xff00ff);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            draw_rect(750, 300, 950, 400, 0x005555);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            draw_rect(500, 300, 700, 400, 0x550055);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            draw_rect(750, 300, 950, 400, 0x00ffff);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hot_button == 2) {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            draw_rect(250, 300, 450, 400, 0x555500);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            draw_rect(500, 300, 700, 400, 0x550055);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            draw_rect(750, 300, 950, 400, 0x00ffff);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">if</span> (pressed(BUTTON_ENTER)) {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span> (hot_button == 0) {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                blocks = initialize_level1();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                bl_color = 0xffff00;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">if</span> (hot_button == 1) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                blocks = initialize_level2();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                bl_color = 0xff00ff;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">if</span> (hot_button == 2) {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                blocks = initialize_level3();</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                bl_color = 0x00ffff;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            current_gamemode = GM_GAMEPLAY;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">if</span> (pressed(BUTTON_ENTER)) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span> (hot_button == 0) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                blocks = initialize_level1();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                bl_color = 0xffff00;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">if</span> (hot_button == 1) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                blocks = initialize_level2();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                bl_color = 0xff00ff;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span> (hot_button == 2) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                blocks = initialize_level3();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                bl_color = 0x00ffff;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            current_gamemode = GM_GAMEPLAY;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 <div class="ttc" id="astruct_input_html"><div class="ttname"><a href="struct_input.html">Input</a></div><div class="ttdef"><b>Definition</b> platform_common.cpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

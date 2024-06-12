@@ -1,8 +1,9 @@
 
-/**
-* Функция render_background устанавливает определенный цвет заднего фона.
-* @return Ничего не возвращает.
-*/
+
+/// \brief Функция render_background устанавливает определенный цвет заднего фона.
+/// 
+/// \return Ничего не возвращает.
+
 void render_background() {
 	u32* pixel = (u32*)memory;
 	for (int y = 0; y < height; y++) {
@@ -12,11 +13,11 @@ void render_background() {
 	}
 }
 
-/**
-* Функция clear_screen устанавливает указанный цвет заднего фона.
-* @param color - цвет заднего фона.
-* @return Ничего не возвращает.
-*/
+/// \brief Функция clear_screen устанавливает указанный цвет заднего фона.
+/// 
+/// \param color - цвет заднего фона.
+///
+/// \return Ничего не возвращает.
 void clear_screen(u32 color) {
 	u32* pixel = (u32*)memory;
 	for (int y = 0; y < height; y++) {
@@ -26,28 +27,18 @@ void clear_screen(u32 color) {
 	}
 }
 
-/**
-* Функция clamp ограничивает объектов в рамках размера окна, чтобы избежать ошибок.
-* @param min - нижняя граница.
-* @param val - корректируемое значение.
-* @param max - верхняя граница граница.
-* @return возвращает int.
-*/
-inline int clamp(int min, int val, int max) {
-	if (val < min) return min;
-	if (val > max) return max;
-	return val;
-}
 
-/**
-* Функция draw_rect рисует прямоугольник, по указанным координатам и цвету.
-* @param x0 - начальная координата x.
-* @param y0 - начальная координата y.
-* @param x1 - конечная координата x.
-* @param y1 - конечная координата y.
-* @param color - цвет прямоугольника.
-* @return Ничего не возвращает.
-*/
+
+
+/// \brief Функция draw_rect рисует прямоугольник, по указанным координатам и цвету.
+/// 
+/// \param x0 - начальная координата x.
+/// \param y0 - начальная координата y.
+/// \param x1 - конечная координата x.
+/// \param y1 - конечная координата y.
+/// \param color - цвет прямоугольника.
+/// 
+/// \return Ничего не возвращает.
 void draw_rect(int x0, int y0, int x1, int y1, int color) {
 	x0 = clamp(0, x0, width);
 	x1 = clamp(0, x1, width);
@@ -62,10 +53,9 @@ void draw_rect(int x0, int y0, int x1, int y1, int color) {
 	}
 }
 
-/**
-* Функция draw_border рисует границы игрового пространства.
-* @return Ничего не возвращает.
-*/
+/// \brief Функция draw_border рисует границы игрового пространства.
+/// 
+/// \return Ничего не возвращает.
 void draw_border() {
 	draw_rect(0,0,10,720, 0xffffff);
 	draw_rect(1255, 0, 1265, 720, 0xffffff);

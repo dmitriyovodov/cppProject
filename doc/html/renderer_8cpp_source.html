@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>docGame: D:/CPPProject/game/game/renderer.cpp Source File</title>
+<title>cccc: D:/CPPProject/game/game/main_code/renderer.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">docGame<span id="projectnumber">&#160;1</span>
+   <div id="projectname">cccc
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_37c6514aeece95293041e34c0f2e0784.html">game</a></li><li class="navelem"><a class="el" href="dir_f3c7bdd864fb62ac910b9282db6cb7e6.html">game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_37c6514aeece95293041e34c0f2e0784.html">game</a></li><li class="navelem"><a class="el" href="dir_f3c7bdd864fb62ac910b9282db6cb7e6.html">game</a></li><li class="navelem"><a class="el" href="dir_d1505030f84e25c582bc69a66d605026.html">main_code</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -92,49 +92,52 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">void</span> render_background() {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    u32* pixel = (u32*)memory;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++) {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            *pixel++ = 0xff0000;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        }</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    }</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> clear_screen(u32 color) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    u32* pixel = (u32*)memory;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            *pixel++ = color;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">inline</span> <span class="keywordtype">int</span> clamp(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> val, <span class="keywordtype">int</span> max) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> (val &lt; min) <span class="keywordflow">return</span> min;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (val &gt; max) <span class="keywordflow">return</span> max;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> val;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> draw_rect(<span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> color) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    x0 = clamp(0, x0, width);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    x1 = clamp(0, x1, width);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    y0 = clamp(0, y0, height);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    y1 = clamp(0, y1, height);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = y0; y &lt; y1; y++) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        u32* pixel = (u32*)memory + x0 + y * width;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = x0; x &lt; x1; x++) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            *pixel++ = color;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> draw_border() {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    draw_rect(0,0,10,720, 0xffffff);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    draw_rect(1255, 0, 1265, 720, 0xffffff);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    draw_rect(0, 710, 1280, 720, 0xffffff);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keywordtype">void</span> render_background() {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    u32* pixel = (u32*)memory;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            *pixel++ = 0xff0000;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> clear_screen(u32 color) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    u32* pixel = (u32*)memory;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            *pixel++ = color;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">inline</span> <span class="keywordtype">int</span> clamp(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> val, <span class="keywordtype">int</span> max) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (val &lt; min) <span class="keywordflow">return</span> min;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> (val &gt; max) <span class="keywordflow">return</span> max;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> val;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> draw_rect(<span class="keywordtype">int</span> x0, <span class="keywordtype">int</span> y0, <span class="keywordtype">int</span> x1, <span class="keywordtype">int</span> y1, <span class="keywordtype">int</span> color) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    x0 = clamp(0, x0, width);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    x1 = clamp(0, x1, width);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    y0 = clamp(0, y0, height);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    y1 = clamp(0, y1, height);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = y0; y &lt; y1; y++) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        u32* pixel = (u32*)memory + x0 + y * width;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = x0; x &lt; x1; x++) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            *pixel++ = color;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> draw_border() {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    draw_rect(0,0,10,720, 0xffffff);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    draw_rect(1255, 0, 1265, 720, 0xffffff);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    draw_rect(0, 710, 1280, 720, 0xffffff);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

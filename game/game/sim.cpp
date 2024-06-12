@@ -2,48 +2,43 @@
 #define pressed(b) (input->buttons[b].is_down && input->buttons[b].changed)
 #define released(b) (!input->buttons[b].is_down && input->buttons[b].changed)
 
-/**
-* player_pos_x - позици€ игрока; ball_p_x и ball_p_y - позици€ м€ча; ball_speed_y, ball_speed_x и ball_size - характеристики м€ча
-*/
+/// player_pos_x - позици€ игрока; ball_p_x и ball_p_y - позици€ м€ча; ball_speed_y, ball_speed_x и ball_size - характеристики м€ча
 float player_pos_x = 565, ball_p_x = 630, ball_p_y = 240, ball_speed_y = -400, ball_speed_x = 0, ball_size = 20;
-/**
-* p_width и p_height - размеры игрока
-*/
+
+/// p_width и p_height - размеры игрока
+
 int p_width = 150, p_height = 20;
-/**
-* speed - обща€ скорость объектов.
-*/
+
+/// speed - обща€ скорость объектов.
+
 float speed = 1200.f;
-/**
-* dif - разница между позицией м€ча и игрока при столкновении. ¬ли€ет на изменение скорости м€ча по x.
-*/
+
+/// dif - разница между позицией м€ча и игрока при столкновении. ¬ли€ет на изменение скорости м€ча по x.
+
 float dif;
 
-/**
-* bl_w и bl_h - размеры м€ча.
-*/
+/// bl_w и bl_h - размеры м€ча.
+
 int bl_w = 130, bl_h = 30;
-/**
-* bl_color - цвет м€ча.
-*/
+
+/// bl_color - цвет м€ча.
+
 u32 bl_color = 0;
 
-/**
-* blocks - вектор координат блоков уровней.
-*/
+/// blocks - вектор координат блоков уровней.
+
 std::vector<std::vector<int>> blocks;
 
-/**
-* hot_button - состо€ние меню.
-*/
+///hot_button - состо€ние меню.
+
 int hot_button = 0;
 
-/**
-* ‘ункци€ simulate_game выполн€ет все событи€ игрового процесса.
-* @param input - указатель на объект input main.cpp.
-* @param dt - разница времени между кадрами. ¬ли€ет на скорость объектов.
-* @return Ќичего не возвращает.
-*/
+/// \brief ‘ункци€ simulate_game выполн€ет все событи€ игрового процесса.
+/// 
+/// \param input - указатель на объект input main.cpp.
+/// \param dt - разница времени между кадрами. ¬ли€ет на скорость объектов.
+/// 
+/// \return Ќичего не возвращает.
 void simulate_game(Input* input, float dt) {
 	clear_screen(0x000000);
 	draw_border();
